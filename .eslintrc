@@ -1,0 +1,18 @@
+{
+    "env": {
+        "jest/globals": true
+    },
+    "extends": [
+        "@quotecenter/eslint-config-quotecenter",
+        "@quotecenter/eslint-config-quotecenter/react",
+        "@quotecenter/eslint-config-quotecenter/jsx-a11y"
+    ],
+    "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    },
+    "plugins": ["jest"]
+}

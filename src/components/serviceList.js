@@ -7,41 +7,15 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 import { services } from '../services';
+import LivenessIcon from './livenessIcon';
 
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
 });
-
-const aliveCircleIcon = <CheckCircleIcon style={{ fill: '#00FF00' }}/>;
-const deadCircleIcon = <CheckCircleIcon style={{ fill: '#55555' }}/>;
-
-// TODO: do this in a useEffect
-// we'll want this data to cause lazy loading of rows rather than waiting
-const isServiceAlive = async (serviceURL)  => {
-  fetch(serviceURL)
-    .then((result) => {
-      console.log(result)
-      if (result.ok) {
-        console.log('succeeded')
-        return true;
-      }
-      else {
-        console.log('failed')
-        console.log(result.status);
-        return false;
-      }
-    })
-    .catch((error) => {
-      console.log('errored')
-      console.log({error})
-      return false;
-    })
-};
 
 export default function ServiceList() {
   const classes = useStyles();
@@ -64,12 +38,18 @@ export default function ServiceList() {
               {/* <TableCell component="th" scope="row">{service.name}</TableCell> */}
               <TableCell align="center">{service.name}</TableCell>
               <TableCell align="center">Sandbox</TableCell>
-              <TableCell align="center">{isServiceAlive(service.sandboxLivenessURL) ? aliveCircleIcon : deadCircleIcon }</TableCell>
               <TableCell align="center">
-                {<a href={service.slackChannel}>{service.owningTeam}</a>}
+                <LivenessIcon livenessURL={service.sandboxLivenessURL}/>
               </TableCell>
               <TableCell align="center">
-                {<a href={service.githubURL}>{service.githubURL}</a>}
+                {
+                  service.owningTeam ?
+                    <a href={service.slackChannel}>{service.owningTeam}</a> :
+                    '?'
+                }
+              </TableCell>
+              <TableCell align="center">
+                <a href={service.githubURL}>{service.githubURL}</a>
               </TableCell>
             </TableRow>
           ))}

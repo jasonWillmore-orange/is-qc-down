@@ -1,0 +1,8 @@
+{
+    "name": "Product Recommendations ACL",
+    "githubURL": "github.com/quotecenter/product-recommendations-acl",
+    "owningTeam": "Experiences",
+    "slackChannel": "https://hdqc.slack.com/archives/CP9SPGC91",
+    "sandboxLivenessURL": "https://product-recommendations-acl--qc-new-sandbox.np-hdqc.io/status/health",
+    "stagingLivenessURL": "https://product-recommendations-acl--qc-new-staging.np-hdqc.io/status/health"
+}

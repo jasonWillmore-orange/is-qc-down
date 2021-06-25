@@ -1,0 +1,8 @@
+{
+    "name": "Product Identifiers",
+    "githubURL": "github.com/quotecenter/product-identifiers-svc",
+    "owningTeam": "",
+    "slackChannel": "",
+    "sandboxLivenessURL": "https://product-identifiers-svc--catalog-sandbox.np-hdqc.io",
+    "stagingLivenessURL": ""
+}

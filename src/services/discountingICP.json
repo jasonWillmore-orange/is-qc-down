@@ -1,0 +1,8 @@
+{
+    "name": "Discounting ICP",
+    "githubURL": "github.com/quotecenter/discounting-icp-svc",
+    "owningTeam": "",
+    "slackChannel": "",
+    "sandboxLivenessURL": "https://discounting-icp-svc--pricing-sandbox.np-hdqc.io/status/health",
+    "stagingLivenessURL": "https://discounting-icp-svc--pricing-staging.np-hdqc.io/status/health"
+}

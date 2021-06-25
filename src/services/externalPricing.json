@@ -1,0 +1,8 @@
+{
+    "name": "External Pricing",
+    "githubURL": "github.com/quotecenter/external-pricing-acl-svc",
+    "owningTeam": "Penny Pinchers",
+    "slackChannel": "https://hdqc.slack.com/archives/CE8KWQZFS",
+    "sandboxLivenessURL": "https://external-pricing-acl-svc--pricing-sandbox.np-hdqc.io/status/health",
+    "stagingLivenessURL": "https://external-pricing-acl-svc--pricing-staging.np-hdqc.io/status/health"
+}

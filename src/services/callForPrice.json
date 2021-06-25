@@ -1,0 +1,8 @@
+{
+    "name": "Call for Price",
+    "githubURL": "github.com/quotecenter/call-for-price-svc",
+    "owningTeam": "",
+    "slackChannel": "",
+    "sandboxLivenessURL": "http://call-for-price-icp-svc--qc-new-sandbox.private.hdqc.io/health",
+    "stagingLivenessURL": "http://call-for-price-icp-svc--qc-new-staging.private.hdqc.io/health"
+}

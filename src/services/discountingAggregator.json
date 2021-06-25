@@ -1,0 +1,8 @@
+{
+    "name": "Discounting Aggregator",
+    "githubURL": "github.com/quotecenter/discounting-aggregator-svc",
+    "owningTeam": "Penny Pinchers",
+    "slackChannel": "https://hdqc.slack.com/archives/CE8KWQZFS",
+    "sandboxLivenessURL": "https://discounting-aggregator-svc--pricing-sandbox.np-hdqc.io/status/health",
+    "stagingLivenessURL": "https://discounting-aggregator-svc--pricing-staging.np-hdqc.io/status/health"
+}

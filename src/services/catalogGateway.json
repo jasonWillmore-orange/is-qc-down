@@ -1,0 +1,8 @@
+{
+    "name": "Catalog Gateway",
+    "githubURL": "github.com/quotecenter/app-catalog-gateway",
+    "owningTeam": "Experiences",
+    "slackChannel": "https://hdqc.slack.com/archives/CP9SPGC91",
+    "sandboxLivenessURL": "https://app-catalog-gateway--qc-new-sandbox.hdqc.io/api/liveness",
+    "stagingLivenessURL": "https://app-catalog-gateway--qc-new-staging.hdqc.io/api/liveness"
+}

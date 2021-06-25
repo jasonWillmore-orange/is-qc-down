@@ -1,0 +1,8 @@
+{
+    "name": "Customer service",
+    "githubURL": "",
+    "owningTeam": "",
+    "slackChannel": "",
+    "sandboxLivenessURL": "https://customer-svc--qc-new-sandbox.np-hdqc.io/status/health",
+    "stagingLivenessURL": "https://customer-svc--qc-new-staging.np-hdqc.io/status/health"
+}
